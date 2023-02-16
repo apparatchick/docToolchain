@@ -48,7 +48,7 @@ Now, type the following:
 [source, bash]
 ----
 cd <your project>
-curl -Lo dtcw doctoolchain.github.io/dtcw of wget doctoolchain.github.io/dtcw
+curl -Lo dtcw doctoolchain.github.io/dtcw
 chmod +x dtcw
 ----
 
