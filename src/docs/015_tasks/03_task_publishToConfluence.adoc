@@ -24,6 +24,7 @@ When specifying an unknown language, it would even display an error.
 Therefore, some transformation is applied.
 
 * If no language is given in the source block, it is explicitly set to plain text (because the default would be Java that might not always apply).
+* If the language of the source block is not supported by Confluence, it is set to plain text as fallback to avoid the error.
 * Some known and common AsciiDoc source languages are mapped to Confluence code block languages.
 +
 [%header,cols="1,1,1"]
@@ -44,7 +45,6 @@ Therefore, some transformation is applied.
 |yml
 |different name of language
 |===
-* If the language of the source block is not supported by Confluence, it is set to plain text as fallback to avoid the error.
 
 NOTE: Get a list of valid languages (and learn how to add others) https://confluence.atlassian.com/doc/code-block-macro-139390.html[here].
 
@@ -61,7 +61,7 @@ Labels (keywords) must not contain a space character. Use either '_' or '-'.
 
 == Configuration
 
-You configure the publishToConfluence task in the file docToolchainConfig.groovy. It is located in the root of your project folder. We try to make the configuration self-explanatory, but below is some more information about each config option.
+You configure the publishToConfluence task in the file `docToolchainConfig.groovy`. It is located in the root of your project folder. We try to make the configuration self-explanatory, but below is some more information about each config option.
 
 include::{projectRootDir}/template_config/Config.groovy[tags=input-config]
 

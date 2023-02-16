@@ -17,7 +17,7 @@ If you encounter problems, create a GitHub issue and the community will help you
 
 include::../010_manual/20_install.adoc[tags=install]
 
-=== Problems & solutions
+=== Troubleshoot
 
 ==== `dtcw` doesn't run
 
@@ -34,9 +34,9 @@ If you see that, it's likely that the wrapper didn't download correctly.
 You can expect that an HTML page was downloaded instead of the wrapper.
 Please try to redownload the wrapper.
 
-==== docker throws and error with `dtcw`
+==== Docker throws and error with `dtcw`
 
-On windows you might get the following error 
+On Windows you might get the following error: 
 [source]
 ----
 Error response from daemon: user declined directory sharing C:\Users\path_to_my_folder
@@ -45,7 +45,7 @@ Error response from daemon: user declined directory sharing C:\Users\path_to_my_
 This means that docker wanted to share the named folder (possibly the repo) but didn't have the rights. This means you have to share the folder yourself on docker.
 Go to docker dashboard -> settings -> Resources -> FileSharing. Add required folder and hit Apply & Restart.
 
-==== Incompatible Java version
+==== Incompatible Java Version
 
 You may see that docToolchain starts but crashes with a stacktrace that starts like this:
 
